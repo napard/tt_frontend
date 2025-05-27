@@ -1,0 +1,79 @@
+header {
+    background: linear-gradient(#00000011, #222222ff 70%, #cd7004aa 71%, #00000000);
+    height: 260px;
+}
+
+@media (max-width: 1200px) {
+    header {
+        height: 210px;
+    }
+}
+
+/* Logo y botones superiores. */
+.logo-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 0;
+
+    ul {
+        display: flex;
+
+        li {
+            margin-right: -10px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .logo-and-buttons {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .logo-and-buttons {
+        max-width: 90%;
+        justify-content: space-around;
+        padding: 0;
+    }
+}
+
+.logo-buttons {
+    position: relative;
+    top: 8px;
+}
+
+@media (max-width: 1200px) {
+    .logo-buttons {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        top: -2px;
+    }
+}
+
+/* Imagen de logo. */
+.logo-cont .img {
+    margin-right: 10px;
+    padding: 0 0 10px 0;
+    width: 350px;
+}
+
+@media (max-width: 1200px) {
+    .logo-cont .img {
+        position: relative;
+        width: 300px;
+        bottom: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+/* Sección categorías. */
+.main-cat {
+    position: relative;
+    background: linear-gradient(#eeeeeeee 40%, #00000000);
+    top: -15vw;
+    border-radius: 5px;
+    box-shadow: 5px 5px 50px #00000022;
+    display: inline-block;
+    max-width: 80%;
+
+    .cat-text {
+        color: #222222ff;
+        font-family: Titilium;
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .cat-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+
+        .photo-cat {
+            position: relative;
+            background-color: white;
+            cursor: pointer;
+            width: 220px;
+            height: 150px;
+            margin: 5px;
+            border: 1px solid rgb(202, 201, 201);
+
+            img {
+                position: absolute;
+                left: 0;
+                height: 150px;
+                width: 100%;
+            }
+
+            .textframe {
+                position: absolute;
+                background-color: #00000000;
+                height: 3.5rem;
+                left: 0;
+                top: 5px;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 0;
+                right: 0;
+                transform: scaleY(0);
+                transition: opacity 300ms, background-color 300ms, transform 300ms;
+                width: 95%;
+            }
+
+            h1 {
+                color: #222222ff;
+                font-family: Titilium;
+                font-size: 2.0rem;
+                font-weight: bold;
+                margin-top: 8px;
+            }
+
+            @media (max-width: 1200px) {
+                .textframe {
+                    transform: scaleY(1);
+                    opacity: 1;
+                    background-color: #ffffffdd;
+                    height: 2rem;
+                    top: 0;
+                }
+
+                h1 {
+                    font-size: 1.2rem;
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .photo-cat {
+                flex-basis: calc(100% / 4);
+            }
+        }
+
+        .photo-cat:hover > .textframe {
+            background-color: #ffffffdd;
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .cat-content {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .main-cat {
+        top: -10vw;
+
+        .cat-text {
+            font-size: 1.5rem;
+            padding-top: 5px;
+        }
+    }
+}
+
+

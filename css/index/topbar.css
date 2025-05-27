@@ -1,0 +1,25 @@
+/* Topbar de información. */
+#topbar {
+    background-color: #222222ff;
+    padding-top: 0.4rem;
+}
+
+/* Texto topbar. */
+.topbar-text a {
+    color: white;
+    font-family: Titling;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .topbar-text a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .topbar-text {
+        max-width: 90%;
+    }
+}

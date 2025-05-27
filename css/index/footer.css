@@ -1,0 +1,119 @@
+footer {
+    margin-top: 100px;
+    background-color: #222222ff;
+    color: white;
+    font-family: Titilium;
+
+    .copy {
+        text-align: center;
+        font-family: Titilium;
+        padding: 10px;
+    }
+
+    .cont {
+        display: flex;
+    }
+
+    .contact {
+        padding: 50px 0 20px 30px;
+        border-bottom: 1px solid #444444ff;
+        font-size: 1.2rem;
+        width: 30%;
+    }
+
+    @media (max-width: 992px) {
+        .contact {
+            width: 35%;
+        }
+    }
+
+    .contact hr {
+        color: #444444ff;
+        background-color: #444444ff;
+        width: 50px;
+        height: 1px;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+
+    .contact p {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .contact a {
+        color: #fe6a0bff;
+    }
+
+    .contact .small-fa-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .social {
+        padding-top: 20px;
+    }
+
+    .rest {
+        width: 70%;
+        font-size: 1.2rem;
+        border: 1px solid #444444ff;
+        display: flex;
+    
+        .rest1 {
+            min-width: 30%;
+            padding: 50px 0 0 20px;
+        
+            hr {
+                color: #444444ff;
+                background-color: #444444ff;
+                width: 50px;
+                height: 1px;
+                margin: 0;
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+        
+            p {
+                font-size: 1rem;
+                transition: margin-left 300ms;
+                margin-bottom: 5px;
+            
+                a {
+                    color: #fe6a0bff;
+                }
+                
+                a:hover {
+                    color: #fe9f0bff;
+                }
+            }
+
+            p:hover {
+                margin-left: 10px;
+            }
+
+            /* ---------- */
+            
+            p > .bullet::before {
+                content: '•';
+                transform: scale(0);
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                transition: all 300ms;
+                margin-left: -10px;
+            }
+
+            p > .bullet:hover::before {
+                transform: scale(1);
+            }
+        }
+
+        .rest3 {
+            padding: 50px 15px 0 15px;
+            border-left: 1px solid #444444ff;
+        }
+    }
+}

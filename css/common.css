@@ -1,0 +1,60 @@
+.on-center {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+.small-fa-icon {
+    position: relative;
+    color: white;
+    bottom: 2px;
+    margin: 0 5px 0 5px;
+    filter: drop-shadow(2px 2px 1px #000000aa);
+}
+
+/* Override Materialize buttons. */
+.button-override {
+    background-color: #00000000 !important;
+    border-radius: 2px;
+    box-shadow: none !important;
+    color: #ffffffdd !important;
+    font-family: Titling;
+    font-size: 1.2rem;
+    margin: 20px;
+    text-shadow: 2px 2px 3px black;
+    transition: color 300ms ease;
+}
+
+@media (max-width: 1200px) {
+    .button-override {
+        font-size: 1.3rem;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .button-override {
+        font-size: 1.3rem;
+        margin: 0px;
+    }
+}
+
+.button-override:hover {
+    color: white !important;
+}
+
+.button-override2 {
+    background-color: #00000000 !important;
+    box-shadow: none !important;
+    color: #ffffffdd !important;
+    font-family: Titilium;
+    font-size: 1rem;
+    text-shadow: 2px 2px 3px black;
+    transition: color 300ms ease;
+    text-transform: none;
+}
+
+.button-override2:hover {
+    color: white !important;
+}
+

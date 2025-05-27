@@ -1,0 +1,117 @@
+@import "page.css";
+@import "index/topbar.css";
+@import "index/header.css";
+@import "index/footer.css";
+
+/* Imagen de fondo. */
+.background {
+    background-image: url("../img/back12.jpeg");
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.cont-frame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -90px;
+    position: relative;
+    text-align: left;
+
+    h4 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    
+    .columna {
+        background: linear-gradient(#00000000, #eeeeeeee);
+        color: #222222ff;
+        font-family: Titilium;
+        font-size: 1.4rem;
+        padding: 40px;
+        border-radius: 5px;
+        width: 40%;
+    }
+
+    @media (max-width: 992px) {
+        .columna {
+            width: 100%;
+        }
+    }
+
+    label {
+        color: black;
+        font-family: Titilium;
+    }
+
+    .label-com {
+        font-family: Titilium;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"] {
+        border-bottom: 1px solid #555555ff;
+        box-shadow: none;
+    }
+
+    input[type="text"]:focus, input[type="email"]:focus {
+        border-bottom: 1px solid #cd7004ff !important;
+        box-shadow: none !important;
+    }
+
+    #comentario {
+        min-height: 150px;
+    }
+
+    input[type=submit] {
+        box-shadow: 2px 2px 3px #555555ff;
+        background-color: #555555ff;
+        border: none;
+        font-size: 1.2rem;
+        color: white;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: #fe6a0bff;
+        transition: background-color 300ms ease !important;
+        text-shadow: 2px 2px 3px #333333ff;
+    }
+
+    input[type=submit]:hover {
+        background-color: #fe9f0bff;
+    }
+
+    
+    input::placeholder {
+        color: #00000077;
+        font-weight: bold;
+    }
+
+    textarea {
+        border: 1px solid #444444ff;
+    }
+
+    li {
+        font-size: 1.2rem;
+
+        a {
+            color: hsl(234, 93%, 57%);
+        }
+        
+        svg {
+            color: #444444ff;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+
