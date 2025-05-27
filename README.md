@@ -3,3 +3,8 @@ de equipamiento táctico (chalecos, pistoleras, accesorios) para fuerzas policia
 y de seguridad. También fabrica y vende artículos referentes a camping y viajes
 como pueden ser bolsos de diversas categorías, delantales parrilleros, sets
 materos, mochilas para camping y trekking y artículos de pesca.
+
+Notas:
+
+Al diseño responsive le falta MUCHO pulido todavía, sobre todo a la versión mobile, y
+no está implementada la navbar desplegable.

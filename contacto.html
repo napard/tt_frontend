@@ -40,19 +40,19 @@
         <div class="cont-frame">
             <div class="columna izq">
                 <h4>Contacto rápido</h4>
-                <form action="" method="" class="formulario">
+                <form action="https://formspree.io/f/manoryyd" method="POST" class="formulario">
                     <p>
-                        <input type="text" placeholder="Nombre" />
+                        <input type="text" name="nombre" placeholder="Nombre" required/>
                     </p>
                     <p>
-                        <input type="email" placeholder="E-mail" />
+                        <input type="email" name="email" placeholder="E-mail" required/>
                     </p>
                     <p>
-                        <input type="text" placeholder="Teléfono" />
+                        <input type="text" name="telefono" placeholder="Teléfono" />
                     </p>
                     <p>
                         <label class="label-com" for="comentario">Comentario</label>
-                        <textarea id="comentario"></textarea>
+                        <textarea id="comentario" name="comentario" required></textarea>
                     </p>
                     <p class="acciones right"><input type="submit" value="Enviar"></p>
                 </form>
