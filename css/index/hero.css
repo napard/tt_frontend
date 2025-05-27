@@ -1,6 +1,7 @@
 .hero {
     position: relative;
     top: -141px;
+    overflow: hidden;
 
     img {
         position: inherit;
@@ -13,6 +14,17 @@
     .hero {
         img {
             padding-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        overflow: visible;
+        
+        img {
+            height: 80vw;
+            left: -200px;
         }
     }
 }
@@ -31,6 +43,12 @@
     .hero-text1 {
         right: 9vw;
         top: 8vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-text1 {
+        display: none;
     }
 }
 
@@ -54,6 +72,13 @@
     }
 }
 
+@media (max-width: 576px) {
+    .hero-text2 {
+        top: 280px;
+        font-size: 0.92rem;
+    }
+}
+
 /* Botón tienda. */
 .btn-comprar {
     margin-top: 1rem;
@@ -70,6 +95,12 @@
     .btn-comprar {
         margin-top: 1.8rem;
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-comprar {
+        margin-top: 55px;
     }
 }
 

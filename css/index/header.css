@@ -53,6 +53,12 @@ header {
     }
 }
 
+@media (max-width: 576px) {
+    .logo-buttons {
+        display: none;
+    }
+}
+
 /* Imagen de logo. */
 .logo-cont .img {
     margin-right: 10px;

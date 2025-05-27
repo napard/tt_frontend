@@ -76,3 +76,9 @@
         top: -20px;
     }
 }
+
+@media (max-width: 576px) {
+    .productos-cat {
+        top: 20px;
+    }
+}

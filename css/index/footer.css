@@ -14,6 +14,12 @@ footer {
         display: flex;
     }
 
+    @media (max-width: 576px) {
+        .cont {
+            flex-direction: column;
+        }
+    }
+
     .contact {
         padding: 50px 0 20px 30px;
         border-bottom: 1px solid #444444ff;
@@ -24,6 +30,13 @@ footer {
     @media (max-width: 992px) {
         .contact {
             width: 35%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .contact {
+            width: 100%;
+            border-bottom: 0;
         }
     }
 
@@ -114,6 +127,19 @@ footer {
         .rest3 {
             padding: 50px 15px 0 15px;
             border-left: 1px solid #444444ff;
+        }
+
+        @media (max-width: 576px) {
+            .rest3 {
+                padding-bottom: 30px;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        .rest {
+            width: 100%;
+            flex-direction: column;
         }
     }
 }

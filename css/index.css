@@ -68,6 +68,25 @@
     }
 }
 
+@media (max-width: 576px) {
+    .combos {
+        top: 8px;
+        font-size: 1rem;
+    }
+
+    .ofertas {
+        overflow: visible;
+        left: -40px;
+        top: 8px;
+        font-size: 1rem;
+    }
+
+    .hot {
+        top: -35px;
+        left: 60px;
+    }
+}
+
 /* Nav #2. */
 nav {
     position: relative;
@@ -133,6 +152,12 @@ nav {
         margin-top: 35px;
         width: 50vw;
         height: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-bar {
+        left: 0;
     }
 }
 
