@@ -29,6 +29,14 @@
     }
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+    .hero {
+        img {
+            height: 100vw;
+        }
+    }
+}
+
 .hero-text1 {
     position: absolute;
     top: 6vw;
@@ -79,6 +87,15 @@
     }
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+    .hero-text2 {
+        top: 210px;
+        font-size: 0.85rem;
+        width: 80%;
+        right: 10%;
+    }
+}
+
 /* Botón tienda. */
 .btn-comprar {
     margin-top: 1rem;
@@ -101,6 +118,12 @@
 @media (max-width: 576px) {
     .btn-comprar {
         margin-top: 55px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+    .btn-comprar {
+        margin-top: 30px;
     }
 }
 
