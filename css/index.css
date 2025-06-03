@@ -28,8 +28,7 @@
 
 @media (min-width: 300px) and (max-width: 500px) {
     .background {
-        background-image: url("../img/back12_mobile.jpeg");
-        margin-left: -180px;
+        top: 15px;
     }
 }
 
@@ -40,6 +39,7 @@
 }
 
 .ofertas {
+    overflow: hidden;
     position: relative;
     top: -10px;
 }
@@ -101,7 +101,7 @@
     }
 
     .ofertas {
-        overflow: visible;
+        overflow: hidden;
         left: -10px;
         top: 5px;
         font-size: 1.1rem;
