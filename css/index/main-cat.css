@@ -114,4 +114,15 @@
     }
 }
 
+@media (min-width: 300px) and (max-width: 500px) {
+    .main-cat {
+        .cat-content {
+            display: block;
+
+            .photo-cat {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
 

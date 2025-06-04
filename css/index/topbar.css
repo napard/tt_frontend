@@ -1,7 +1,10 @@
 /* Topbar de información. */
 #topbar {
+    position: fixed;
+    width: 100%;
     background-color: #222222ff;
     padding-top: 0.4rem;
+    z-index: 1;
 }
 
 /* Texto topbar. */

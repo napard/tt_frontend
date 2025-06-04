@@ -16,6 +16,14 @@
 </head>
 
 <body>
+    <div id="my-sidenav" class="my-sidenav">
+        <a href="#" onclick="closeSidenav()"><span
+                    class="fa fa-times"></span></a>
+        <a href="#">TIENDA</a>
+        <a href="#">BLOG</a>
+        <a href="#">ACERCA DE...</a>
+        <a href="contacto.html">CONTACTO</a>
+    </div>
     <header>
         <div class="background"></div>
         <div id="topbar">
@@ -28,6 +36,7 @@
             <a class="logo-cont" href="index.html">
                 <img class="img" src="img/logo_web6.png" alt="grulla tácticos">
             </a>
+            <div class="btn-open-sidenav" onclick="openSidenav()">&#9776;</div>
             <div class="logo-buttons">
                 <ul>
                     <li><a class="btn waves-effect waves-light button-override animated-underline">HOME</a></li>
@@ -79,7 +88,7 @@
             </div>
         </section>
         <section data-aos="fade-up" class="main-cat">
-            <div class="cat-text">Categorías</div>
+            <div class="cat-text">Categorías más vistas</div>
             <div class="cat-content">
                 <div class="photo-cat">
                     <img src="img/cat_pistolera2.png" alt="pistoleras">
@@ -283,6 +292,7 @@
     <script src="third_party/materialize/js/materialize.min.js"></script>
     <script src="third_party/fontawesome-free-6.7.2-web_min/all.min.js"></script>
     <script src="third_party/aos-master/dist/aos.js"></script>
+    <script src="js/index/sidenav.js"></script>
     <script>
         AOS.init();
     </script>

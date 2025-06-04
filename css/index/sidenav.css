@@ -1,0 +1,22 @@
+.my-sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: #222222ff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding: 45px 0 20px 0;
+    box-shadow: 2px 2px 150px black;
+
+    a {
+        padding: 5px 5px 5px 30px;
+        text-decoration: none;
+        font-family: Titling;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+        text-shadow: 2px 2px 3px black;
+    }
+}

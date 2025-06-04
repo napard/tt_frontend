@@ -1,5 +1,6 @@
 @import "page.css";
 @import "index/topbar.css";
+@import "index/sidenav.css";
 @import "index/header.css";
 @import "index/hero.css";
 @import "index/main-cat.css";
