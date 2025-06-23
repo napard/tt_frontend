@@ -42,6 +42,12 @@ header {
 .logo-buttons {
     position: relative;
     top: 8px;
+
+    .small-fa-icon {
+        width: 2rem;
+        height: 2rem;
+        right: 15px;
+    }
 }
 
 @media (max-width: 1200px) {

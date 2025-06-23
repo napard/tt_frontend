@@ -45,7 +45,8 @@
                     <li><a class="btn waves-effect waves-light button-override animated-underline">ACERCA DE...</a></li>
                     <li><a class="btn waves-effect waves-light button-override animated-underline" href="contacto.html">CONTACTO</a></li>
                     <li>
-                        <a class="btn waves-effect waves-light button-override animated-underline">
+                        <a class="btn-carrito btn waves-effect waves-light button-override animated-underline" href="carrito.html">
+                            <span id="carrito-count">0</span>
                             <span class="small-fa-icon fa-solid fa-shopping-cart"></span>
                         </a>
                     </li>
@@ -140,106 +141,7 @@
         <section data-aos="fade-up" class="productos-cat section-p1">
             <h2>Equipamiento táctico, mochilas, camping y más</h2>
             <p>Hechá un vistazo a nuestros artículos destacados</p>
-            <div class="productos-container">
-                <div class="producto">
-                    <img src="img/prod/1.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="producto">
-                    <img src="img/prod/2.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="producto">
-                    <img src="img/prod/3.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="producto">
-                    <img src="img/prod/4.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="producto">
-                    <img src="img/prod/5.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="producto">
-                    <img src="img/prod/6.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <div class="producto">
-                    <img src="img/prod/7.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
-                <!--<div class="producto">
-                    <img src="img/prod/8.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>-->
-                <div class="producto">
-                    <img src="img/prod/9.jpeg" alt="producto 1">
-                    <div class="producto-descripcion">
-                        <span>Lorem</span>
-                        <h5>Lorem ipsum dolor sit amet.</h5>
-                        <h4>$78</h4>
-                    </div>
-                    <a href="#" class="carrito">
-                        <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-                    </a>
-                </div>
+            <div id="productos-container" class="productos-container">
             </div>
         </section>
     </main>
@@ -293,6 +195,8 @@
     <script src="third_party/fontawesome-free-6.7.2-web_min/all.min.js"></script>
     <script src="third_party/aos-master/dist/aos.js"></script>
     <script src="js/index/sidenav.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
     <script>
         AOS.init();
     </script>
