@@ -6,6 +6,7 @@
 @import "index/main-cat.css";
 @import "index/banner-descuentos.css";
 @import "index/productos-cat.css";
+@import "index/resenas.css";
 @import "index/footer.css";
 
 /* TODO:
@@ -231,6 +232,8 @@ nav {
     box-shadow: none !important;
 }
 
+/* Carrito. */
+
 .btn-carrito {
     overflow: visible;
 }
@@ -249,3 +252,46 @@ nav {
     bottom: 28px;
 }
 
+/* Selector de cantidad en las cards de los productos, esto
+   debe ir en otro lado... */
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+
+    a {
+        position: relative;
+        left: 25px;
+        top: 5px;
+    }
+}
+
+.qty-selector {
+    position: relative;
+    right: 30px;
+    display: flex;
+    max-width: 50px;
+    max-height: 2rem;
+
+    .qty-btn {
+        min-width: 30px;
+        border-radius: 20px;
+        font-family: Titilium;
+        font-size: 1.3rem;
+        border-width: 1px;
+        background-color: white;
+        cursor: grab;
+    }
+
+    input {
+        position: relative;
+        font-family: Titilium;
+        font-size: 1.2rem;
+        text-align: center;
+        bottom: 8px;
+        min-width: 2rem;
+        border: 1px solid #00000033;
+        top: 0px;
+        max-height: 1.8rem;
+    }
+}

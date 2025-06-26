@@ -57,6 +57,18 @@ const products = [
     }
 ];
 
+const decrProdCount = (id) => {
+    let elem = document.getElementById(id);
+    if (elem.value > 1)
+        elem.value -= 1;
+}
+
+const incrProdCount = (id) => {
+    let elem = document.getElementById(id);
+    if (elem.value < 10)
+        elem.value = parseInt(elem.value) + 1;
+}
+
 const productsContainer = document.getElementById("productos-container");
 
 const productCards = () => {
@@ -71,9 +83,16 @@ const productCards = () => {
                 <h5>${product.description}</h5>
                 <h4>$${product.price}</h4>
             </div>
-            <a class="carrito" onclick="cartAddProduct(${i++})">
-                <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
-            </a>
+            <div class="add-to-cart">
+                <div class="qty-selector">
+                    <button class="qty-btn" onclick="decrProdCount('prod-count-${i}')">-</button>
+                    <input id="prod-count-${i}" class="product-qty" value="1">
+                    <button class="qty-btn" onclick="incrProdCount('prod-count-${i}')">+</button>
+                </div>
+                <a class="carrito" onclick="cartAddProduct(${i}, 'prod-count-${i++}')">
+                    <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
+                </a>
+            </div>
         </div>`;
     }).join("");
 

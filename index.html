@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="css/underline_anim.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/fontfaces.css">
+    <link rel="stylesheet" href="css/toast.css">
     <link rel="stylesheet" href="css/index.css">
     <title>Grulla Tácticos</title>
 </head>
 
 <body>
     <div id="my-sidenav" class="my-sidenav">
-        <a href="#" onclick="closeSidenav()"><span
-                    class="fa fa-times"></span></a>
+        <a href="#" onclick="closeSidenav()"><span class="fa fa-times"></span></a>
         <a href="#">TIENDA</a>
         <a href="#">BLOG</a>
         <a href="#">ACERCA DE...</a>
         <a href="contacto.html">CONTACTO</a>
     </div>
+    <div id="toast">Blah...</div>
     <header>
         <div class="background"></div>
         <div id="topbar">
@@ -40,12 +41,15 @@
             <div class="logo-buttons">
                 <ul>
                     <li><a class="btn waves-effect waves-light button-override animated-underline">HOME</a></li>
-                    <li><a class="btn waves-effect waves-light button-override animated-underline" href="#descuentos">TIENDA</a></li>
+                    <li><a class="btn waves-effect waves-light button-override animated-underline"
+                            href="#descuentos">TIENDA</a></li>
                     <li><a class="btn waves-effect waves-light button-override animated-underline">BLOG</a></li>
                     <li><a class="btn waves-effect waves-light button-override animated-underline">ACERCA DE...</a></li>
-                    <li><a class="btn waves-effect waves-light button-override animated-underline" href="contacto.html">CONTACTO</a></li>
+                    <li><a class="btn waves-effect waves-light button-override animated-underline"
+                            href="contacto.html">CONTACTO</a></li>
                     <li>
-                        <a class="btn-carrito btn waves-effect waves-light button-override animated-underline" href="carrito.html">
+                        <a class="btn-carrito btn waves-effect waves-light button-override animated-underline"
+                            href="carrito.html">
                             <span id="carrito-count">0</span>
                             <span class="small-fa-icon fa-solid fa-shopping-cart"></span>
                         </a>
@@ -144,6 +148,11 @@
             <div id="productos-container" class="productos-container">
             </div>
         </section>
+        <section id="resenas" class="resenas" data-aos="fade-up">
+            <h2>Las opiniones de nuestros clientes avalan nuestro compromiso</h2>
+            <div id="resenas-container">
+            </div>
+        </section>
     </main>
     <footer>
         <div class="cont">
@@ -151,22 +160,22 @@
                 CONTACTO
                 <hr>
                 </hr>
-                <p><i class="small-fa-icon fa-solid fa-location-arrow"></i>Calle Falsa 123, Springfield</p>
                 <p><i class="small-fa-icon fa-solid fa-envelope"></i><a href="mailto:contacto@grulla.com.ar">
                         contacto@grulla.com.ar</a></p>
                 <p><i class="small-fa-icon fa-solid fa-clock"></i>Lun. a vie. 9:00 a 13:00 - 16:00 a 19:30</p>
                 <div class="social">
-                <p><i class="small-fa-icon fa-brands fa-whatsapp"></i>11-55667788</p>
-                <p>
-                    <a href="https://www.facebook.com/GrullaTacticos">
-                        <i class="small-fa-icon fa-brands fa-square-facebook"></i>
-                        /GrullaTacticos</a>
-                </p>
-                <p>
-                    <a href="@grulla">
-                        <i class="small-fa-icon fa-brands fa-instagram"></i>
-                        @grulla</a>
-                </p></div>
+                    <p><i class="small-fa-icon fa-brands fa-whatsapp"></i>11-55667788</p>
+                    <p>
+                        <a href="https://www.facebook.com/GrullaTacticos">
+                            <i class="small-fa-icon fa-brands fa-square-facebook"></i>
+                            /GrullaTacticos</a>
+                    </p>
+                    <p>
+                        <a href="@grulla">
+                            <i class="small-fa-icon fa-brands fa-instagram"></i>
+                            @grulla</a>
+                    </p>
+                </div>
             </div>
             <div class="rest">
                 <div class="rest1">
@@ -179,9 +188,12 @@
                     <p><a class="bullet" href="#">Blah...</a></p>
                 </div>
                 <div class="rest3">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis maxime vero error explicabo sit
-                    suscipit in recusandae, veniam assumenda ab autem sunt modi labore iusto nobis velit quas at
-                    incidunt.
+                    <p style="margin-left: 20px;"><i class="small-fa-icon fa-solid fa-map-marker"></i>De la Virgen 2611,
+                        B1761IBO Pontevedra, Provincia de Buenos Aires</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1639.089346610976!2d-58.70695606179239!3d-34.75109120350636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc3841de70bc3%3A0xb6836d338ef19efa!2sGrulla%20Tacticos!5e0!3m2!1ses!2sar!4v1750765174906!5m2!1ses!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -195,10 +207,34 @@
     <script src="third_party/fontawesome-free-6.7.2-web_min/all.min.js"></script>
     <script src="third_party/aos-master/dist/aos.js"></script>
     <script src="js/index/sidenav.js"></script>
-    <script src="js/productos.js"></script>
+    <script src="js/index/productos.js"></script>
+    <script src="js/index/resenas.js"></script>
     <script src="js/carrito.js"></script>
+    <script src="js/toast.js"></script>
+    <script src="js/index/index.js"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        // Simple carousel script.
+        const carousel = document.querySelector('.carousel-inner');
+        const prevBtn = document.querySelector('.carousel-prev');
+        const nextBtn = document.querySelector('.carousel-next');
+        let index = 0;
+
+        function showReview() {
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            index = index > 0 ? index - 1 : 4;
+            showReview();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            index = index < 4 ? index + 1 : 0;
+            showReview();
+        });
     </script>
 </body>
 </html>

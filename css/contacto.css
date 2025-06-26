@@ -26,7 +26,6 @@
 
     p {
         font-size: 1.3rem;
-        margin-bottom: 30px;
     }
     
     .columna {
@@ -50,6 +49,10 @@
         font-family: Titilium;
     }
 
+    .section-com {
+        padding-top: 50px;
+    }
+    
     .label-com {
         font-family: Titilium;
         font-size: 1.2rem;
@@ -110,6 +113,14 @@
             color: #444444ff;
             padding-right: 10px;
         }
+    }
+
+    .form-error {
+        visibility: hidden;
+        color: brown;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 30px;
     }
 }
 
