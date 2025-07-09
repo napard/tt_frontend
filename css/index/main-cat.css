@@ -78,13 +78,25 @@
             }
         }
 
+        .photo-cat:focus {
+            img {
+                border: 3px solid #fe6a0bff;
+            }
+
+            .textframe {
+                background-color: #ffffffdd;
+                opacity: 1;
+                transform: scaleY(1);
+            }
+        }
+
         @media (max-width: 1200px) {
             .photo-cat {
                 flex-basis: calc(100% / 4);
             }
         }
 
-        .photo-cat:hover > .textframe {
+        .photo-cat:hover>.textframe {
             background-color: #ffffffdd;
             opacity: 1;
             transform: scaleY(1);
@@ -97,6 +109,7 @@
         }
     }
 }
+
 @media (min-width: 1000px) and (max-width: 1100px) {
     .main-cat {
         top: -16vw;
@@ -125,4 +138,3 @@
         }
     }
 }
-

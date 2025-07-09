@@ -47,7 +47,7 @@ const resenasHtml = () => {
             <div class="stars">${resena.stars}</div>
         </div>`;
     }).join("");
-    
+
     return html_start + inner + html_end;
 }
 

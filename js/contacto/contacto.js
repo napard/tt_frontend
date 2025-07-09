@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    function isValidEmail(text) {
+    const isValidEmail = text => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(text);
     }
@@ -77,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             event.preventDefault();
             console.log("El formulario es válido...");
+            form.submit();
         }
     });
 });

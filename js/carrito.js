@@ -16,9 +16,9 @@ const cartAddProduct = (index, count_id) => {
     openToast("Productos agregados al carrito...");
 
     let product = {
-        name: products[index].name,
+        name: products_catalog[index].name,
         count: count,
-        price: parseFloat(products[index].price.replace(",", "."))
+        price: parseFloat(products_catalog[index].price.replace(",", "."))
     };
 
     let carrito = JSON.parse(localStorage.getItem("carrito")) || [];

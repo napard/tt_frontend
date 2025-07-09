@@ -108,6 +108,12 @@
     transition: background-color 300ms ease !important;
 }
 
+.btn-comprar:focus {
+    border: 1px solid #fe6a0bff;
+    background-color: orange;
+    box-shadow: 5px 5px 10px #fe6a0bff;
+}
+
 @media (max-width: 992px) {
     .btn-comprar {
         margin-top: 1.8rem;

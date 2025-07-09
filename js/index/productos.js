@@ -1,61 +1,13 @@
-const products = [
-    {
-        name: "Bolso negro",
-        description: "Bolso negro lindo para cosas",
-        price: "1000,50",
-        image: "img/prod/1.jpeg",
-        alt: "producto 1"
-    },
-    {
-        name: "Cosita que cuelga",
-        description: "Cosita que podés llevar colgando",
-        price: "2000,60",
-        image: "img/prod/2.jpeg",
-        alt: "producto 2"
-    },
-    {
-        name: "Otra cosita colgante",
-        description: "Otra cosita que vas a colgar",
-        price: "5653,50",
-        image: "img/prod/3.jpeg",
-        alt: "producto 3"
-    },
-    {
-        name: "Bolso marrón",
-        description: "Bolso marrón con bolsillos para cosas",
-        price: "20000,30",
-        image: "img/prod/4.jpeg",
-        alt: "producto 4"
-    },
-    {
-        name: "Chaleco",
-        description: "Chaleco verde a lo Rambo para que no te corcheen",
-        price: "100000,20",
-        image: "img/prod/5.jpeg",
-        alt: "producto 5"
-    },
-    {
-        name: "Bolso grandote",
-        description: "Bolso grande para guardar un Dachshund",
-        price: "5000,00",
-        image: "img/prod/6.jpeg",
-        alt: "producto 6"
-    },
-    {
-        name: "Bolso azul",
-        description: "Bolso azul fachero, que lindo...",
-        price: "3200,80",
-        image: "img/prod/7.jpeg",
-        alt: "producto 7"
-    },
-    {
-        name: "Bolso gris",
-        description: "Bolso gris para guardar cosas que van en bolso",
-        price: "6500,30",
-        image: "img/prod/9.jpeg",
-        alt: "producto 8"
-    }
-];
+/*const createFakeStore = () => {
+    products.forEach((product) => {
+        fetch("https://fakestoreapi.com/products", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(product)
+        }).then(response => response.json())
+            .then(data => console.log(data));
+    });
+}*/
 
 const decrProdCount = (id) => {
     let elem = document.getElementById(id);
@@ -69,15 +21,18 @@ const incrProdCount = (id) => {
         elem.value = parseInt(elem.value) + 1;
 }
 
-const productsContainer = document.getElementById("productos-container");
+// Usado en 'carrito.js' para manejar el estado del carrito.
+let products_catalog;
 
-const productCards = () => {
+const buildProductCards = (products) => {
     let i = 0;
     let html = ``;
+
+    products_catalog = products;
     html = products.map(product => {
         return `
         <div class="producto">
-            <img src="${product.image}" alt="${product.alt}">
+            <img tabindex="0" src="${product.image}" alt="${product.alt}">
             <div class="producto-descripcion">
                 <span>${product.name}</span>
                 <h5>${product.description}</h5>
@@ -85,18 +40,24 @@ const productCards = () => {
             </div>
             <div class="add-to-cart">
                 <div class="qty-selector">
-                    <button class="qty-btn" onclick="decrProdCount('prod-count-${i}')">-</button>
-                    <input id="prod-count-${i}" class="product-qty" value="1">
-                    <button class="qty-btn" onclick="incrProdCount('prod-count-${i}')">+</button>
+                    <button tabindex="0" class="qty-btn" onclick="decrProdCount('prod-count-${i}')">-</button>
+                    <input tabindex="0" id="prod-count-${i}" class="product-qty" value="1">
+                    <button tabindex="0" class="qty-btn" onclick="incrProdCount('prod-count-${i}')">+</button>
                 </div>
                 <a class="carrito" onclick="cartAddProduct(${i}, 'prod-count-${i++}')">
-                    <i class="small-fa-icon fa-solid fa-shopping-cart"></i>
+                    <i tabindex="0" class="small-fa-icon fa-solid fa-shopping-cart"></i>
                 </a>
             </div>
         </div>`;
     }).join("");
 
-    return html;
+    document.getElementById("productos-container").innerHTML = html;
 }
 
-productsContainer.innerHTML = productCards();
+const createProductsContent = () => {
+    fetch("data/products.json")
+        .then(response => response.json())
+        .then(data => buildProductCards(data))
+        .catch((error) => console.log("Error al obtener productos: ", error));
+}
+

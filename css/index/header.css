@@ -66,6 +66,10 @@ header {
 }
 
 /* Imagen de logo. */
+.logo-cont:focus {
+    border: 2px solid #fe6a0bff;
+}
+
 .logo-cont .img {
     margin-right: 10px;
     padding: 0 0 10px 0;

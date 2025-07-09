@@ -228,7 +228,7 @@ nav {
 }
 
 .stext[type=text]:focus {
-    border: none !important;
+    border: 2px solid #fe6a0bff !important;
     box-shadow: none !important;
 }
 
@@ -283,6 +283,10 @@ nav {
         cursor: grab;
     }
 
+    .qty-btn:focus {
+        border: 2px solid #fe6a0bff;
+    }
+
     input {
         position: relative;
         font-family: Titilium;
@@ -293,5 +297,10 @@ nav {
         border: 1px solid #00000033;
         top: 0px;
         max-height: 1.8rem;
+    }
+
+    input:focus {
+        border: 2px solid #fe6a0bff;
+        box-shadow: none !important;
     }
 }

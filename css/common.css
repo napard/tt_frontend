@@ -25,6 +25,10 @@
     transition: color 300ms ease;
 }
 
+.button-override:focus {
+    border: 2px solid #fe6a0bff;
+}
+
 @media (max-width: 1200px) {
     .button-override {
         font-size: 1.3rem;
