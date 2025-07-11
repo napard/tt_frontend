@@ -96,7 +96,7 @@
             }
         }
 
-        .photo-cat:hover>.textframe {
+        .photo-cat:hover > .textframe {
             background-color: #ffffffdd;
             opacity: 1;
             transform: scaleY(1);

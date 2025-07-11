@@ -1,11 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="third_party/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="third_party/fontawesome-free-6.7.2-web_min/all.min.css">
+    <link rel="stylesheet" href="third_party/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="css/resetmargins.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/fontfaces.css">
+    <link rel="stylesheet" href="css/carrito.css">
+    <title>Grulla Tácticos - Carrito</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="background"></div>
+        <div id="topbar">
+            <div class="on-center topbar-text">
+                <a href="#">Consultá por envíos a través de X ...</a><span
+                    class="small-fa-icon fa-solid fa-paper-plane"></span>
+            </div>
+        </div>
+        <div class="on-center logo-and-buttons">
+            <a class="logo-cont" href="index.html">
+                <img class="img" src="img/logo_web6.png" alt="grulla tácticos">
+            </a>
+            <div class="logo-buttons">
+                <ul>
+                    <li><a class="btn waves-effect waves-light button-override animated-underline"
+                            href="contacto.html">CONTACTO</a></li>
+                    <li><a class="btn waves-effect waves-light button-override animated-underline"
+                            href="index.html">HOME</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cart-frame">
+            <h4>Tu carrito</h4>
+
+            <ul id="cart-content" class="cart-content">
+            </ul>
+            <div class="total">
+                <div id="cart-total">Total: $0,00</div>
+                <div class="vaciar-volver">
+                    <div id="empty-cart-btn" class="btn btn-carrito btn1" onclick="emptyCart()">Vaciar carrito</div>
+                    <div class="btn btn-carrito btn2"><a href="index.html#descuentos">Volver a la tienda</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copy">
+            <div>Copyright ©2025 <bold>GRULLA</bold>
+            </div>
+            <div>Todos los derechos reservados</div>
+        </div>
+    </footer>
+    <script src="third_party/materialize/js/materialize.min.js"></script>
+    <script src="third_party/fontawesome-free-6.7.2-web_min/all.min.js"></script>
+    <script src="js/carrito.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     updateCartCounter();
     /*createFakeStore();*/
     createProductsContent();

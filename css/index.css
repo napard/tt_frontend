@@ -9,10 +9,6 @@
 @import "index/resenas.css";
 @import "index/footer.css";
 
-/* TODO:
-    Position sticky en encabezado.
-*/
-
 /* Imagen de fondo. */
 .background {
     background-image: url("../img/back12.jpeg");
@@ -250,6 +246,39 @@ nav {
     z-index: 1;
     left: 50px;
     bottom: 28px;
+}
+
+.btn-carrito-mob {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    left: -35px;
+    top: 10px;
+    min-width: 40px;
+
+    svg {
+        top: -35px;
+        left: -20px;
+    }
+
+    #carrito-count-mob {
+        background-color: #ff2a00;
+        color: white;
+        font-family: Titilium;
+        font-weight: bold;
+        font-size: 0.6rem;
+        border-radius: 50%;
+        padding: 0 5px;
+        position: relative;
+        z-index: 1;
+        bottom: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-carrito-mob {
+        display: block;
+    }
 }
 
 /* Selector de cantidad en las cards de los productos, esto

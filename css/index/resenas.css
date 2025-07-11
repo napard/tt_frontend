@@ -13,7 +13,7 @@
     }
 
     .carousel {
-        border: 1px solid hsl(0, 0%, 65%);
+        border: 1px solid #a6a6a6;
         border-radius: 5px;
         position: relative;
         top: 50px;
@@ -45,7 +45,7 @@
         font-size: 2rem;
         margin-top: 0.5rem;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: hsl(34, 89%, 50%);
+        -webkit-text-stroke-color: #f18f0e;
     }
 
     .carousel-prev,
@@ -74,3 +74,10 @@
         color: #fe6a0bff;
     }
 }
+
+@media (max-width: 576px) {
+    #resenas {
+        top: 10px;
+    }
+}
+
